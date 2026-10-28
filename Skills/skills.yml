@@ -9,7 +9,7 @@ groups:
       - {name: TypeScript, level: strong, evidence: [Makeda_Threads_backend, nest-auth-rbac-template, General_purpose_webapp, family_help_front, email_client]}
       - {name: JavaScript, level: strong, evidence: [Secondary_school_management, tracker, Assistive_technology_hackathon]}
       - {name: Python, level: working, evidence: [advanced_typing_backend, quiz_gen_api, Ibm_data_analytics_capstone_project, csc302-python-self]}
-      - {name: SQL, level: working, evidence: [mega_seller_backend, typing_club_server, university]}
+      - {name: SQL, level: strong, evidence: [mega_seller_backend, typing_club_server, university, credly:ibm-sql-querying, credly:ibm-db-sql-ds]}
       - {name: C, level: working, evidence: [Multithreading]}
       - {name: Kotlin, level: familiar, evidence: [memory-game-, word_complete_cl_game]}
       - {name: Go, level: familiar, evidence: [gin-task-tracker]}
@@ -47,7 +47,10 @@ groups:
       - {name: Firebase / Firestore, level: working, evidence: [General_purpose_webapp, quiz_gen_api, tracker]}
       - {name: Redis, level: familiar, evidence: [advanced_typing_backend]}
       - {name: SQLAlchemy / Alembic, level: working, evidence: [advanced_typing_backend, typing_club_server]}
-      - {name: pandas / Jupyter, level: working, evidence: [Ibm_data_analytics_capstone_project, model_development]}
+      - {name: pandas / NumPy / Jupyter, level: working, evidence: [Ibm_data_analytics_capstone_project, model_development, credly:ibm-data-analysis-python]}
+      - {name: scikit-learn (ML models), level: familiar, evidence: [credly:ibm-ml-python, credly:ibm-data-analysis-python]}
+      - {name: Matplotlib / Seaborn / Folium, level: working, evidence: [credly:ibm-data-viz-python]}
+      - {name: Excel / IBM Cognos dashboards, level: familiar, evidence: [credly:ibm-excel, credly:ibm-dashboards]}
   distributed:
     label: Concurrency & Distributed Systems
     items:
@@ -76,6 +79,12 @@ groups:
       - {name: Google Gemini API, level: working, evidence: [quiz_gen_api, Quiz_gen_react_native]}
       - {name: TensorFlow.js / face-api.js / MediaPipe, level: familiar, evidence: [face_recognision_front]}
       - {name: NLP sentiment analysis, level: TODO, evidence: [TODO-add-repo]}
+  security:
+    label: Security
+    items:
+      - {name: Linux / Bash, level: working, evidence: [credly:ethical-hacking-kali]}
+      - {name: Ethical hacking & vulnerability assessment (Kali Linux), level: familiar, evidence: [credly:ethical-hacking-kali]}
+      - {name: Secure auth (JWT, bcrypt, RBAC), level: strong, evidence: [mega_seller_backend, nest-auth-rbac-template, advanced_typing_backend]}
   practices:
     label: Engineering Practices
     items:

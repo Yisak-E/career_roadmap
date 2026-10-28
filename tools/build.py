@@ -173,7 +173,7 @@ def render(v, cfg, mode):
     L.append(f"**{cfg.get('headline') or pr['headlines'].get(track, pr['headlines']['default'])}**\n")
     contact = [pr.get("location"), pr.get("email"), pr.get("phone")]
     contact = [c for c in contact if c and not TODO.search(str(c))]
-    LBL = {"github": "GitHub", "linkedin": "LinkedIn", "portfolio": "Portfolio"}
+    LBL = {"github": "GitHub", "linkedin": "LinkedIn", "portfolio": "Portfolio", "credly": "Credly"}
     links = [f"[{LBL.get(k, k.title())}]({u})" for k, u in pr.get("links", {}).items() if u and not TODO.search(u)]
     L.append(" · ".join(contact + links) + "\n")
 
@@ -227,11 +227,20 @@ def render(v, cfg, mode):
     body["education"] = s
 
     certs = [c for c in v["certs"] if c.get("verified")]
+    certs.sort(key=lambda c: str(c.get("issued") or ""), reverse=True)
+    if cfg.get("certifications"):                      # explicit list wins
+        byid = {c["id"]: c for c in certs}
+        certs = [byid[i] for i in cfg["certifications"] if i in byid]
+    elif mode == "resume":                             # best match for this job
+        datenum = lambda c: int(re.sub(r"\D", "", str(c.get("issued") or "")) or 0)
+        certs = sorted(certs, key=lambda c: (-(len(set(c.get("tags", [])) & focus) + bool(c.get("featured"))),
+                                             -datenum(c)))[: cfg.get("max_certs", 5)]
+        certs.sort(key=lambda c: str(c.get("issued") or ""), reverse=True)
     if certs:
         s = ["## Certifications"]
         for c in certs:
             name = f"[{c['name']}]({c['credential_url']})" if c.get("credential_url", "").startswith("http") else c["name"]
-            meta = ", ".join(x for x in (c.get("issuer"), str(c.get("issued") or "")) if x)
+            meta = ", ".join(x for x in (c.get("issuer"), str(c.get("issued") or "")[:7]) if x)
             s.append(f"- {name}" + (f" — {meta}" if meta else ""))
         body["certifications"] = s + [""]
 

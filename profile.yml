@@ -11,6 +11,7 @@ links:
   github: https://github.com/Yisak-E
   linkedin: https://www.linkedin.com/in/yisak-isaac-ma2027
   portfolio: https://yisakmeta.online   # from LinkedIn
+  credly: https://www.credly.com/users/yisak-demelash-metaferiya
 
 # Headlines and summaries are keyed by "track". An application picks one
 # track in its tailor.yml; the CV uses `default`.
@@ -40,5 +41,5 @@ summaries:
     Gemini AI and browser ML (TensorFlow.js) into working products.
   data: >-
     Software engineering student with hands-on data analysis experience in Python
-    (pandas, Jupyter) through IBM data analytics coursework, combined with backend
-    development in SQL-backed APIs.
+    (pandas, NumPy, scikit-learn, Matplotlib) backed by 9 IBM data/ML badges and
+    2 IBM SQL badges, combined with backend development of SQL-backed APIs.

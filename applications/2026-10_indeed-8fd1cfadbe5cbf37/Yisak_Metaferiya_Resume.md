@@ -1,7 +1,7 @@
 # Yisak Metaferiya
 **Junior Software Engineer | Backend Developer (Java · Spring Boot · Node.js)**
 
-United Arab Emirates · yisakdemelash7@gmail.com · [GitHub](https://github.com/Yisak-E) · [LinkedIn](https://www.linkedin.com/in/yisak-isaac-ma2027) · [Portfolio](https://yisakmeta.online)
+United Arab Emirates · yisakdemelash7@gmail.com · [GitHub](https://github.com/Yisak-E) · [LinkedIn](https://www.linkedin.com/in/yisak-isaac-ma2027) · [Portfolio](https://yisakmeta.online) · [Credly](https://www.credly.com/users/yisak-demelash-metaferiya)
 
 ## Summary
 Backend-focused software engineering student (Abu Dhabi University) and software engineering intern at nanoVOLTZ. Builds secure REST APIs in Java/Spring Boot (Spring Security, JWT, JPA, PostgreSQL), Node.js/NestJS (MongoDB, RBAC, Swagger) and Python/Flask (SQLAlchemy, Celery, Redis). Has implemented concurrency control for high-contention ticket sales, real-time updates over Server-Sent Events, and an encrypted multi-broker RabbitMQ pub/sub system. Ships with Docker and Git.
@@ -9,7 +9,7 @@ Backend-focused software engineering student (Abu Dhabi University) and software
 ## Technical Skills
 - **Languages:** Java, TypeScript, JavaScript, Python, SQL, C, Kotlin, Go
 - **Backend:** Spring Boot, Spring Security + JWT, Spring Data JPA / Hibernate, NestJS, Node.js, Flask, REST API design, Role-based access control (RBAC)
-- **Databases & Data:** PostgreSQL, MySQL, MongoDB / Mongoose, Firebase / Firestore, Redis, SQLAlchemy / Alembic, pandas / Jupyter
+- **Databases & Data:** PostgreSQL, MySQL, MongoDB / Mongoose, Firebase / Firestore, Redis, SQLAlchemy / Alembic, pandas / NumPy / Jupyter, scikit-learn (ML models)
 - **DevOps & Tools:** Git / GitHub, Docker (multi-stage builds), Docker Compose, Maven, GitHub Actions / Pages, Cloud deployment (Render)
 - **Testing & Quality:** pytest, JUnit 5
 
@@ -65,8 +65,8 @@ Backend-focused software engineering student (Abu Dhabi University) and software
 Relevant coursework: Object-Oriented Programming & Design Patterns (Java), Data Structures & Algorithms, Operating Systems (multithreading in C), Distributed Systems (messaging, pub/sub), Web & Mobile Application Development
 
 ## Certifications
-- Visual Elements of User Interface Design — CalArts (Coursera)
-- Introduction to Next.js
-- Introduction to Ethical Hacking Principles
+- [Ethical Hacking with Kali Linux](https://www.credly.com/badges/f4cca18b-6813-45df-9baf-b8fa53b12918) — IBM (Coursera), 2026-01
+- [Meta Front-End Developer Professional Certificate](https://www.credly.com/badges/b75cb522-0767-4482-845c-83678bb659fe) — Meta (Coursera), 2025-10
+- [Querying Databases with SQL](https://www.credly.com/badges/375470d3-751a-4a3a-93a2-35184744f3d1) — IBM (Coursera), 2025-04
+- [Databases and SQL for Data Science](https://www.credly.com/badges/c6f03b52-021d-421f-9a9a-555190fd06fc) — IBM (Coursera), 2025-04
 - Create a Supermarket App using Java OOP
-- Python GUI Development with Tkinter

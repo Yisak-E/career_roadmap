@@ -1,62 +1,196 @@
 # CERTIFICATIONS — only `verified: true` entries are printed.
-# Source of the first five: LinkedIn export (Oct 2026). Add issue dates + credential URLs from LinkedIn.
-# Put PDFs/images in Certifications/files/ and reference them in `file`.
+# Resume: the builder picks the `max_certs` best matches for the job's focus_tags (featured ones break ties).
+# CV: everything verified, newest first.
+
+# ── Verified on Credly (https://www.credly.com/users/yisak-demelash-metaferiya), pulled 2026-10-28 ──
+- id: ethical-hacking-kali
+  name: Ethical Hacking with Kali Linux
+  issuer: IBM (Coursera)
+  issued: 2026-01-13
+  credential_url: https://www.credly.com/badges/f4cca18b-6813-45df-9baf-b8fa53b12918
+  source: credly
+  tags: [security, linux]
+  featured: false
+  verified: true
+- id: meta-frontend
+  name: Meta Front-End Developer Professional Certificate
+  issuer: Meta (Coursera)
+  issued: 2025-10-11
+  credential_url: https://www.credly.com/badges/b75cb522-0767-4482-845c-83678bb659fe
+  source: credly
+  tags: [frontend, react, javascript, fullstack]
+  featured: true
+  verified: true
+- id: ibm-data-analysis-python
+  name: Data Analysis with Python
+  issuer: IBM (Coursera)
+  issued: 2025-08-22
+  credential_url: https://www.credly.com/badges/059d4c1c-4dc1-463d-9e74-6e6d8f3d56d5
+  source: credly
+  tags: [data, python, ai]
+  featured: false
+  verified: true
+- id: ibm-data-viz-python
+  name: Data Visualization with Python
+  issuer: IBM (Coursera)
+  issued: 2025-08-20
+  credential_url: https://www.credly.com/badges/2d459ede-15ad-4a92-a231-fd2b3559833b
+  source: credly
+  tags: [data, python]
+  featured: false
+  verified: true
+- id: ibm-python-project-ds
+  name: Python Project for Data Science
+  issuer: IBM (Coursera)
+  issued: 2025-08-15
+  credential_url: https://www.credly.com/badges/bd28032e-9194-403d-a8f2-e4867efeca77
+  source: credly
+  tags: [data, python]
+  featured: false
+  verified: true
+- id: ibm-dashboards
+  name: Data Visualization & Dashboard Essentials
+  issuer: IBM (Coursera)
+  issued: 2025-08-14
+  credential_url: https://www.credly.com/badges/2c09cc28-8cc9-4b13-b852-e55780c4ba1b
+  source: credly
+  tags: [data]
+  featured: false
+  verified: true
+- id: ibm-genai-data
+  name: Generative AI Essentials for Data Analytics
+  issuer: IBM (Coursera)
+  issued: 2025-08-13
+  credential_url: https://www.credly.com/badges/fa0b861a-69aa-4b7b-ba96-d8d5f4cfd4f5
+  source: credly
+  tags: [ai, data]
+  featured: false
+  verified: true
+- id: ibm-python-ds-ai
+  name: Python for Data Science and AI
+  issuer: IBM (Coursera)
+  issued: 2025-08-13
+  credential_url: https://www.credly.com/badges/206ded7a-4cc1-4240-9f51-c9890519cf8b
+  source: credly
+  tags: [python, data, ai]
+  featured: false
+  verified: true
+- id: ibm-excel
+  name: Excel Essentials for Data Analytics
+  issuer: IBM (Coursera)
+  issued: 2025-08-12
+  credential_url: https://www.credly.com/badges/7d480c66-eb8e-4bbd-9001-930767d7d2c7
+  source: credly
+  tags: [data]
+  featured: false
+  verified: true
+- id: ibm-data-analytics-essentials
+  name: Data Analytics Essentials
+  issuer: IBM (Coursera)
+  issued: 2025-08-11
+  credential_url: https://www.credly.com/badges/a38f3606-5d77-4528-97e1-7fff3b00c49c
+  source: credly
+  tags: [data]
+  featured: false
+  verified: true
+- id: ibm-ml-python
+  name: Machine Learning with Python
+  issuer: IBM (Coursera)
+  issued: 2025-07-09
+  credential_url: https://www.credly.com/badges/b4250e51-65c7-4961-be95-a93cb71915d2
+  source: credly
+  tags: [ai, python, data, ml]
+  featured: true
+  verified: true
+- id: ibm-sql-querying
+  name: Querying Databases with SQL
+  issuer: IBM (Coursera)
+  issued: 2025-04-20
+  credential_url: https://www.credly.com/badges/375470d3-751a-4a3a-93a2-35184744f3d1
+  source: credly
+  tags: [sql, backend, data]
+  featured: true
+  verified: true
+- id: ibm-db-sql-ds
+  name: Databases and SQL for Data Science
+  issuer: IBM (Coursera)
+  issued: 2025-04-14
+  credential_url: https://www.credly.com/badges/c6f03b52-021d-421f-9a9a-555190fd06fc
+  source: credly
+  tags: [sql, data, python, backend]
+  featured: false
+  verified: true
+- id: cisco-data-analytics
+  name: Data Analytics Essentials
+  issuer: Cisco Networking Academy
+  issued: 2025-04-01
+  credential_url: https://www.credly.com/badges/3eee8f4e-7237-4040-b90e-43dc06496675
+  source: credly
+  tags: [data, sql]
+  featured: false
+  verified: true
+- id: cisco-python-1
+  name: Python Essentials 1
+  issuer: Cisco Networking Academy / OpenEDG Python Institute
+  issued: 2025-03-16
+  credential_url: https://www.credly.com/badges/5f12bd26-fc8f-49fb-a1e6-415a8dcc541e
+  source: credly
+  tags: [python]
+  featured: false
+  verified: true
+- id: cisco-js-1
+  name: JavaScript Essentials 1
+  issuer: Cisco Networking Academy / OpenEDG JS Institute
+  issued: 2025-03-12
+  credential_url: https://www.credly.com/badges/e6f61c3a-c6ee-438b-95e0-dfad728405fd
+  source: credly
+  tags: [javascript, frontend]
+  featured: false
+  verified: true
+
+# ── From LinkedIn (no Credly badge). Add issue date + credential URL from LinkedIn → Licenses & certifications ──
 - id: ui-visual-elements
   name: Visual Elements of User Interface Design
-  issuer: CalArts (Coursera)
+  issuer: "CalArts (Coursera)"
   issued: ""
   credential_url: ""
-  file: ""
+  source: linkedin
   tags: [frontend, design, ui]
+  featured: false
   verified: true
 - id: intro-nextjs
   name: Introduction to Next.js
-  issuer: ""                      # TODO issuer (Coursera project?)
+  issuer: ""        # TODO issuer
   issued: ""
   credential_url: ""
-  file: ""
+  source: linkedin
   tags: [frontend, nextjs, react]
+  featured: false
   verified: true
-- id: ethical-hacking
+- id: ethical-hacking-principles
   name: Introduction to Ethical Hacking Principles
-  issuer: ""                      # TODO issuer
+  issuer: ""        # TODO issuer
   issued: ""
   credential_url: ""
-  file: ""
+  source: linkedin
   tags: [security]
+  featured: false
   verified: true
 - id: java-oop-supermarket
   name: Create a Supermarket App using Java OOP
-  issuer: ""                      # TODO issuer (Coursera Guided Project?)
+  issuer: ""        # TODO issuer
   issued: ""
   credential_url: ""
-  file: ""
+  source: linkedin
   tags: [java, oop, backend]
+  featured: false
   verified: true
 - id: python-tkinter
   name: Python GUI Development with Tkinter
-  issuer: ""                      # TODO issuer
+  issuer: ""        # TODO issuer
   issued: ""
   credential_url: ""
-  file: ""
+  source: linkedin
   tags: [python]
+  featured: false
   verified: true
-# ── Inferred from course-project repos, NOT on your LinkedIn. Confirm, then set verified: true ──
-- id: ibm-data-analyst
-  name: IBM Data Analyst Professional Certificate
-  issuer: IBM (Coursera)
-  issued: ""
-  credential_url: ""
-  file: ""
-  evidence: [Ibm_data_analytics_capstone_project, model_development, Analyzing-Historical-Stock-Revenue-Data-and-Building-a-Dashboard]
-  tags: [data, python, sql]
-  verified: false
-- id: meta-frontend
-  name: Meta Front-End Developer (Little Lemon capstone)
-  issuer: Meta (Coursera)
-  issued: ""
-  credential_url: ""
-  file: ""
-  evidence: [little_lemon]
-  tags: [frontend, react]
-  verified: false

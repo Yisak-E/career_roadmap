@@ -7,7 +7,7 @@
 
 - **Role:** Software Engineering Intern @ nanoVOLTZ (since Jan 2026). B.Sc. Software Engineering @ Abu Dhabi University (started Aug 2023).
 - **Strongest evidence:** Java/Spring Boot backends (MegaSeller: concurrency + JWT + SSE + Docker), NestJS/MongoDB APIs with RBAC, a RabbitMQ distributed pub/sub system, and many Next.js/React frontends.
-- **Gaps recruiters will notice:** most repos have boilerplate READMEs, no live demos, few tests, no CI pipelines, no cloud certification, and experience entries with no descriptions.
+- **Gaps recruiters will notice:** most repos have boilerplate READMEs, no live demos, few tests, no CI pipelines, no cloud or Java certification (your 16 Credly badges are strong on data/Python/SQL, but none covers backend Java or cloud), and experience entries with no descriptions.
 
 ## Target
 
@@ -23,7 +23,9 @@
 - [ ] Write real READMEs for those 6: what it is, architecture diagram, how to run, screenshots, what you learned.
 - [ ] Add nanoVOLTZ, CodSoft, CodeAlpha and Peer Tutor bullets to `Work-Experience/experience.yml` **and** to LinkedIn.
 - [ ] Add details for ROAR, NLP Sentiment Analysis and JMeter Load Testing (`Projects/*/project.md`).
-- [ ] Add issue dates and credential links for your 5 LinkedIn certifications.
+- [x] Import 16 verified Credly badges into the vault (done 2026-10-28).
+- [ ] Add issue dates and credential links for the 5 LinkedIn-only certifications.
+- [ ] Add the Credly badges to LinkedIn → Licenses & certifications (most are missing there).
 
 ## Phase 1: Next 3 months (Nov 2026 – Jan 2027): make the best projects production-grade
 
