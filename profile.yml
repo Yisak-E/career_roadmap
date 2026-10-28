@@ -16,12 +16,20 @@ links:
 # Headlines and summaries are keyed by "track". An application picks one
 # track in its tailor.yml; the CV uses `default`.
 headlines:
+  personal: Junior Software Engineer | Software Engineering Student
   default: Junior Software Engineer | Software Engineering Student, Abu Dhabi University
   backend: Junior Software Engineer | Backend Developer (Java · Spring Boot · Node.js)
   fullstack: Junior Software Engineer | Full-Stack Developer (React · Next.js · Spring Boot · NestJS)
   data: Junior Software Engineer | Developer with Data Analytics Background (Python · SQL)
 
 summaries:
+  personal: >-
+    Motivated and detail-oriented Software Engineering Intern with hands-on experience in
+    coding and project management. Proven ability to collaborate effectively as a Project
+    Intern, driving team success through innovative solutions. As a Peer Tutor, I have honed
+    my communication skills, enabling me to explain complex concepts clearly. Eager to
+    contribute my technical skills and passion for learning to a dynamic team, fostering
+    growth and excellence in software development.
   default: >-
     Software engineering student at Abu Dhabi University and software engineering intern at nanoVOLTZ who builds practical, end-to-end applications.
     Has shipped REST APIs in Spring Boot, NestJS and Flask with JWT authentication
@@ -43,3 +51,10 @@ summaries:
     Software engineering student with hands-on data analysis experience in Python
     (pandas, NumPy, scikit-learn, Matplotlib) backed by 9 IBM data/ML badges and
     2 IBM SQL badges, combined with backend development of SQL-backed APIs.
+
+hobbies:
+  - Cycling
+  - Playing Soccer
+  - Traveling
+  - AI & Emerging Technologies Exploration
+  - Gaming

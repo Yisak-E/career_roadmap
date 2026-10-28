@@ -1,0 +1,6 @@
+# Copy to private/personal.yml and fill in. private/ is git-ignored.
+address: City, Street, Country
+date_of_birth: MM/DD/YYYY
+passport: ""
+visa_status: ""
+photo: private/photo.jpg

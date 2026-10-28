@@ -18,9 +18,12 @@ career_roadmap/
 ├── applications/
 │   ├── _template/              job.md + tailor.yml — copy for each new application
 │   └── 2026-10_indeed-…/       one folder per job: JD, tailoring, the resume you sent
+├── private/                    passport, DOB, address, photo — git-ignored (see personal.example.yml)
 ├── cv.yml                      settings for the full CV
 ├── ROADMAP.md                  where you're going + what to do next
-└── tools/build.py              the generator
+└── tools/
+    ├── build.py                the generator
+    └── two_column.py           your resume design (header band + photo, two columns, A4)
 ```
 
 ## Setup (once)
@@ -45,11 +48,14 @@ cp -r applications/_template applications/2026-11_company-role
 python tools/build.py match  applications/2026-11_company-role   # ranks your projects for this job
 # 2. put the top project ids, track and focus_tags into tailor.yml
 python tools/build.py resume applications/2026-11_company-role   # -> .md / .html / .docx
-# 3. open the .html in a browser -> Print -> Save as PDF.  Then:
+# 3. open the .html in Chrome/Edge -> Print -> Save as PDF
+#    (Margins: None, Background graphics: ON). Then:
 git add -A && git commit -m "Apply: Company – Role"
 ```
 
-Each application folder keeps the exact resume you sent, so `git log applications/` is your application history.
+Git tracks each application's `job.md` + `tailor.yml`, so any resume you sent can be rebuilt exactly; `git log applications/` is your application history. The generated resume files themselves are git-ignored because they contain your passport number and date of birth.
+
+**Privacy:** `private/` (passport, DOB, address, photo) is never committed. If you push this repo to GitHub, keep it private anyway, and remove `passport` from `personal_fields` in tailor.yml unless an employer asks for it.
 
 ## Rules that keep the vault trustworthy
 

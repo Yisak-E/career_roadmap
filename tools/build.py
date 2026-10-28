@@ -50,6 +50,7 @@ def vault():
         certs=load_yaml("Certifications/certifications.yml") or [],
         achievements=load_yaml("Achievements/achievements.yml") or [],
         projects=load_projects(),
+        personal=load_yaml("private/personal.yml") or {},
     )
 
 
@@ -164,6 +165,21 @@ def pick_bullets(bullets, focus, n):
     return [b for _, b in keep]
 
 
+def select_certs(all_certs, cfg, focus, mode):
+    """Verified certs, newest first. Resume: best `max_certs` matches for focus_tags (0 / "all" = every one)."""
+    datenum = lambda c: int(re.sub(r"\D", "", str(c.get("issued") or "")) or 0)
+    certs = sorted((c for c in all_certs if c.get("verified")), key=lambda c: -datenum(c))
+    if cfg.get("certifications"):                      # explicit list wins
+        byid = {c["id"]: c for c in certs}
+        return [byid[i] for i in cfg["certifications"] if i in byid]
+    limit = cfg.get("max_certs", 5)
+    if mode == "resume" and limit not in (0, "all", None):
+        keep = sorted(certs, key=lambda c: (-(len(set(c.get("tags", [])) & focus) + bool(c.get("featured"))),
+                                            -datenum(c)))[:limit]
+        certs = [c for c in certs if c in keep]
+    return certs
+
+
 def render(v, cfg, mode):
     pr = v["profile"]
     track = cfg.get("track", "default")
@@ -226,16 +242,7 @@ def render(v, cfg, mode):
             s.append("Relevant coursework: " + ", ".join(e["relevant_courses"]) + "\n")
     body["education"] = s
 
-    certs = [c for c in v["certs"] if c.get("verified")]
-    certs.sort(key=lambda c: str(c.get("issued") or ""), reverse=True)
-    if cfg.get("certifications"):                      # explicit list wins
-        byid = {c["id"]: c for c in certs}
-        certs = [byid[i] for i in cfg["certifications"] if i in byid]
-    elif mode == "resume":                             # best match for this job
-        datenum = lambda c: int(re.sub(r"\D", "", str(c.get("issued") or "")) or 0)
-        certs = sorted(certs, key=lambda c: (-(len(set(c.get("tags", [])) & focus) + bool(c.get("featured"))),
-                                             -datenum(c)))[: cfg.get("max_certs", 5)]
-        certs.sort(key=lambda c: str(c.get("issued") or ""), reverse=True)
+    certs = select_certs(v["certs"], cfg, focus, mode)
     if certs:
         s = ["## Certifications"]
         for c in certs:
@@ -311,9 +318,17 @@ def md_to_html(md):
 def cmd_resume(app):
     app = Path(app).resolve()
     cfg = yaml.safe_load((app / "tailor.yml").read_text(encoding="utf-8")) or {}
-    md = render(vault(), cfg, "resume")
-    name = vault()["profile"]["name"].replace(" ", "_")
-    write_outputs(md, app, f"{name}_Resume")
+    v = vault()
+    name = v["profile"]["name"].replace(" ", "_")
+    if cfg.get("template", "two-column") == "two-column":
+        sys.path.insert(0, str(Path(__file__).parent))
+        from two_column import render_two_column
+        out = app / f"{name}_Resume.html"
+        out.write_text(render_two_column(v, cfg, ROOT, pick_bullets, select_certs), encoding="utf-8")
+        print(f"Wrote {out.relative_to(ROOT)}  — open in Chrome/Edge → Print → Save as PDF "
+              "(Margins: None, Background graphics: on)")
+        return
+    write_outputs(render(v, cfg, "resume"), app, f"{name}_Resume")   # template: simple
 
 
 def cmd_cv():

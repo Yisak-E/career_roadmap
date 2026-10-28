@@ -1,6 +1,7 @@
-# WORK EXPERIENCE — newest first. Source: LinkedIn export (Oct 2026).
-# Roles/dates are real. BULLETS ARE MISSING — LinkedIn has no descriptions. Add 2–4 per role:
-#   verb + what you built/did + tech + result/number.  Tags let tailor.yml pick the most relevant bullets.
+# WORK EXPERIENCE — newest first.
+# Bullets + dates from your own resume template (Oct 2026). LinkedIn shows different dates for
+# nanoVOLTZ (Jan 2026 – Present) and Peer Tutor (Feb 2024 – Jan 2025) — make both sources agree.
+# Bullets: verb + what you did + tech + result/number. Tags let tailor.yml prefer relevant bullets.
 - id: nanovoltz
   include: true
   title: Software Engineering Intern
@@ -8,10 +9,13 @@
   location: United Arab Emirates
   type: Internship
   start: Jan 2026
-  end: Present
-  bullets: []
-    # - text: Built ... using ... for ..., which ...
-    #   tags: [backend, java]
+  end: Mar 2026
+  bullets:
+    - {text: "Developed features for web applications, enhancing user experience.", tags: [frontend, fullstack, backend]}
+    - {text: "Participated in daily stand-ups to enhance team communication and project flow.", tags: [agile, teamwork]}
+    - {text: "Assisted in debugging and troubleshooting software issues, improving reliability.", tags: [debugging, backend, testing]}
+    - {text: "Documented code and processes, facilitating knowledge sharing within the team.", tags: [documentation]}
+  ideas: "Make these stronger with specifics: which stack (React? Spring?), what feature, how many users/bugs, what improved."
 - id: codsoft
   include: true
   title: Project Intern
@@ -20,10 +24,12 @@
   type: Internship
   start: Dec 2024
   end: Jan 2025
-  bullets: []
-  notes: "Repos pushed in this window that may be the internship tasks (confirm): calculator, Word_count_js, Tic_Tie_Toe-with_js, Guess_dice_js"
+  bullets:
+    - {text: "Analyzed project data, identifying trends that informed strategic decisions.", tags: [data]}
+    - {text: "Conducted research, providing insights that improved project outcomes.", tags: [research]}
+    - {text: "Developed project documentation, streamlining processes for future reference.", tags: [documentation]}
 - id: codealpha
-  include: true
+  include: false            # not on your template resume — set true to show it
   title: Project Intern
   company: CodeAlpha
   location: Remote
@@ -37,8 +43,9 @@
   company: Abu Dhabi University
   location: Abu Dhabi, UAE
   type: Part-time
-  start: Feb 2024
-  end: Jan 2025
-  bullets: []
-    # - text: Tutored N students per week in <courses>, ...
-    #   tags: [communication, teaching]
+  start: Sep 2023
+  end: Feb 2024
+  bullets:
+    - {text: "Mentored peers, fostering a supportive and collaborative learning environment.", tags: [teaching, communication]}
+    - {text: "Promoted a positive attitude towards learning, inspiring academic growth.", tags: [teaching]}
+    - {text: "Provided constructive feedback, improving student confidence and skills.", tags: [teaching, communication]}

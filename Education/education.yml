@@ -1,10 +1,10 @@
 # EDUCATION — newest first. Source: LinkedIn export (Profile_1.pdf, Oct 2026).
 - id: adu-software-engineering
-  degree: B.Sc. Software Engineering        # TODO confirm exact degree title on transcript
+  degree: B.Sc. Software Engineering
   institution: Abu Dhabi University
   location: Abu Dhabi, UAE
   start: Aug 2023
-  end: Expected 2027                         # TODO confirm graduation date (LinkedIn URL suggests 2027)
+  end: Current                               # add expected graduation (e.g. Expected Jun 2027) when known
   gpa: ""                                    # optional — include only if strong (e.g. 3.5+)
   relevant_courses:                          # inferred from your repos — delete any you didn't take
     - Object-Oriented Programming & Design Patterns (Java)
@@ -12,6 +12,8 @@
     - Operating Systems (multithreading in C)
     - Distributed Systems (messaging, pub/sub)
     - Web & Mobile Application Development
+  highlights:
+    - Led a team project that developed a mobile app, enhancing user engagement.
   show_on_resume: true
 - id: coursera-software-engineering
   degree: Online coursework — Computer Software Engineering

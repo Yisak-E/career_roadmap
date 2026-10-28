@@ -1,12 +1,20 @@
-# How to build the resume for THIS job. Run:  python tools/build.py match  applications/<this-folder>
-# then copy the top-ranked project ids below and run:  python tools/build.py resume applications/<this-folder>
-track: backend                 # default | backend | fullstack | data   (picks headline + summary from profile.yml)
-# headline: ""                 # optional override
-# summary: ""                  # optional override — mirror the job's wording honestly
-focus_tags: [backend, java, spring-boot, security, sql]   # bullets with these tags are preferred
-projects: [mega-seller, spring-boot-apis, smart-city-pubsub, makeda-threads]   # ordered; max_projects applies
-max_projects: 4
-bullets_per_project: 3
-skill_groups: [languages, backend, data, devops, testing]
-max_skills_per_group: 8
-sections: [summary, skills, experience, projects, education, certifications, achievements]
+# How to build the resume for THIS job.
+#   python tools/build.py match  applications/<this-folder>   -> ranks your projects against job.md
+#   python tools/build.py resume applications/<this-folder>   -> <Name>_Resume.html (print to PDF)
+template: two-column           # two-column (your design, with photo) | simple (plain one-column + .docx)
+track: personal                # which headline + summary from profile.yml: personal | default | backend | fullstack | data
+# summary: ""                  # optional one-off override — mirror the job's wording honestly
+personal_fields: [date_of_birth, passport, visa_status]   # remove passport unless the employer asks for it
+show_photo: true
+header_links: [github, linkedin, portfolio, credly]
+focus_tags: [backend, java, spring-boot, security, sql]   # bullets/certs with these tags are preferred
+projects: [mega-seller, spring-boot-apis, makeda-threads] # ordered — run `match` to choose
+max_projects: 3
+bullets_per_project: 2
+bullets_per_role: 4
+skill_groups: [languages, backend, frontend, data, distributed, devops, testing, ai, security, practices]
+max_certs: all                 # all | a number (picks the best matches for focus_tags)
+show_coursework: false
+# layout:                      # which section goes in which column (default shown)
+#   page1: {left: [personal, summary, hobbies], right: [experience, education, projects]}
+#   page2: {left: [skills], right: [certifications, achievements]}

@@ -15,7 +15,7 @@ groups:
       - {name: Go, level: familiar, evidence: [gin-task-tracker]}
       - {name: HTML/CSS, level: strong, evidence: [HBD_bank, module3_Static-Web]}
   backend:
-    label: Backend
+    label: Backend & APIs
     items:
       - {name: Spring Boot, level: strong, evidence: [mega_seller_backend, spring_boot_templete, spring_template, general_api_springboot]}
       - {name: Spring Security + JWT, level: strong, evidence: [mega_seller_backend, spring_boot_templete]}
@@ -23,6 +23,7 @@ groups:
       - {name: NestJS, level: strong, evidence: [Makeda_Threads_backend, nest-auth-rbac-template, jobs_back_nest, simple_nest_auth_guard]}
       - {name: Node.js, level: working, evidence: [nono-mail-app, email_client]}
       - {name: Flask, level: working, evidence: [advanced_typing_backend, typing_club_server, quiz_gen_api]}
+      - {name: GraphQL, level: familiar, evidence: [self-reported]}
       - {name: REST API design, level: strong, evidence: [mega_seller_backend, Makeda_Threads_backend, quiz_gen_api]}
       - {name: Role-based access control (RBAC), level: strong, evidence: [nest-auth-rbac-template, Makeda_Threads_backend, mega_seller_backend]}
       - {name: Server-Sent Events (real-time), level: working, evidence: [mega_seller_backend]}
@@ -32,7 +33,7 @@ groups:
     label: Frontend & Mobile
     items:
       - {name: React, level: strong, evidence: [Secondary_school_management, email_client, makeda_pro_front]}
-      - {name: Next.js (App Router, Server Actions), level: strong, evidence: [General_purpose_webapp, mycharity_frontend, family_help_front, university_course_manager_frontend]}
+      - {name: "Next.js (App Router, Server Actions)", level: strong, evidence: [General_purpose_webapp, mycharity_frontend, family_help_front, university_course_manager_frontend]}
       - {name: React Native, level: working, evidence: [Quiz_gen_react_native]}
       - {name: Tailwind CSS, level: strong, evidence: [General_purpose_webapp, mycharity_frontend]}
       - {name: Material UI / Radix / shadcn-ui, level: working, evidence: [General_purpose_webapp, family_help_front, makeda_pro_front]}
@@ -54,8 +55,8 @@ groups:
   distributed:
     label: Concurrency & Distributed Systems
     items:
-      - {name: Java concurrency (locks, ConcurrentHashMap), level: working, evidence: [mega_seller_backend]}
-      - {name: RabbitMQ (topic exchanges, pub/sub), level: working, evidence: [Quic_lab]}
+      - {name: "Java concurrency (locks, ConcurrentHashMap)", level: working, evidence: [mega_seller_backend]}
+      - {name: "RabbitMQ (topic exchanges, pub/sub)", level: working, evidence: [Quic_lab]}
       - {name: Multithreading in C, level: working, evidence: [Multithreading]}
       - {name: Message security (AES + HMAC), level: familiar, evidence: [Quic_lab]}
   devops:
@@ -80,11 +81,11 @@ groups:
       - {name: TensorFlow.js / face-api.js / MediaPipe, level: familiar, evidence: [face_recognision_front]}
       - {name: NLP sentiment analysis, level: TODO, evidence: [TODO-add-repo]}
   security:
-    label: Security
+    label: Security & Auth
     items:
       - {name: Linux / Bash, level: working, evidence: [credly:ethical-hacking-kali]}
       - {name: Ethical hacking & vulnerability assessment (Kali Linux), level: familiar, evidence: [credly:ethical-hacking-kali]}
-      - {name: Secure auth (JWT, bcrypt, RBAC), level: strong, evidence: [mega_seller_backend, nest-auth-rbac-template, advanced_typing_backend]}
+      - {name: "Secure auth (JWT, bcrypt, RBAC)", level: strong, evidence: [mega_seller_backend, nest-auth-rbac-template, advanced_typing_backend]}
   practices:
     label: Engineering Practices
     items:

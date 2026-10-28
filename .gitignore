@@ -7,3 +7,12 @@ Thumbs.db
 ~$*
 # private documents you don't want in history — keep them local
 Certifications/files/private/
+
+# personal / sensitive data (passport, DOB, photo) — never commit
+private/
+# generated resumes contain personal details — rebuild from job.md + tailor.yml instead
+applications/*/*.html
+applications/*/*.pdf
+applications/*/*.docx
+applications/*/*.md
+!applications/*/job.md
