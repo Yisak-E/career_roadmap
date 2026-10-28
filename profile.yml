@@ -1,0 +1,44 @@
+# ─────────────────────────────────────────────────────────────
+# PROFILE — who you are. Used at the top of every resume / CV.
+# Anything marked TODO is not yet verified: fill it in once.
+# ─────────────────────────────────────────────────────────────
+name: Yisak Metaferiya
+preferred_name: Yisak (Isaac)
+location: United Arab Emirates   # from LinkedIn — add city if you like
+email: yisakdemelash7@gmail.com
+phone: ""                         # optional: +971 ...
+links:
+  github: https://github.com/Yisak-E
+  linkedin: https://www.linkedin.com/in/yisak-isaac-ma2027
+  portfolio: https://yisakmeta.online   # from LinkedIn
+
+# Headlines and summaries are keyed by "track". An application picks one
+# track in its tailor.yml; the CV uses `default`.
+headlines:
+  default: Junior Software Engineer | Software Engineering Student, Abu Dhabi University
+  backend: Junior Software Engineer | Backend Developer (Java · Spring Boot · Node.js)
+  fullstack: Junior Software Engineer | Full-Stack Developer (React · Next.js · Spring Boot · NestJS)
+  data: Junior Software Engineer | Developer with Data Analytics Background (Python · SQL)
+
+summaries:
+  default: >-
+    Software engineering student at Abu Dhabi University and software engineering intern at nanoVOLTZ who builds practical, end-to-end applications.
+    Has shipped REST APIs in Spring Boot, NestJS and Flask with JWT authentication
+    and role-based access control, and web/mobile frontends in React, Next.js and
+    React Native. Comfortable with concurrency, messaging (RabbitMQ) and relational
+    and document databases, and works in Git with Dockerised deployments.
+  backend: >-
+    Backend-focused software engineering student (Abu Dhabi University) and software engineering intern at nanoVOLTZ. Builds secure REST APIs in Java/Spring Boot
+    (Spring Security, JWT, JPA, PostgreSQL), Node.js/NestJS (MongoDB, RBAC, Swagger) and
+    Python/Flask (SQLAlchemy, Celery, Redis). Has implemented concurrency control for
+    high-contention ticket sales, real-time updates over Server-Sent Events, and an
+    encrypted multi-broker RabbitMQ pub/sub system. Ships with Docker and Git.
+  fullstack: >-
+    Full-stack software engineering student (Abu Dhabi University) and intern at nanoVOLTZ who takes features from database to UI.
+    Builds APIs in Spring Boot, NestJS and Flask and frontends in React, Next.js (App Router,
+    server actions) and React Native with TypeScript and Tailwind. Has integrated Firebase,
+    Gemini AI and browser ML (TensorFlow.js) into working products.
+  data: >-
+    Software engineering student with hands-on data analysis experience in Python
+    (pandas, Jupyter) through IBM data analytics coursework, combined with backend
+    development in SQL-backed APIs.

@@ -1,0 +1,9 @@
+# generated full CV (rebuild any time); per-application resumes ARE tracked so you know what you sent
+output/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+~$*
+# private documents you don't want in history — keep them local
+Certifications/files/private/

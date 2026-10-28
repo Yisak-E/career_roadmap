@@ -1,0 +1,44 @@
+# WORK EXPERIENCE — newest first. Source: LinkedIn export (Oct 2026).
+# Roles/dates are real. BULLETS ARE MISSING — LinkedIn has no descriptions. Add 2–4 per role:
+#   verb + what you built/did + tech + result/number.  Tags let tailor.yml pick the most relevant bullets.
+- id: nanovoltz
+  include: true
+  title: Software Engineering Intern
+  company: nanoVOLTZ
+  location: United Arab Emirates
+  type: Internship
+  start: Jan 2026
+  end: Present
+  bullets: []
+    # - text: Built ... using ... for ..., which ...
+    #   tags: [backend, java]
+- id: codsoft
+  include: true
+  title: Project Intern
+  company: CodSoft
+  location: United Arab Emirates (remote)
+  type: Internship
+  start: Dec 2024
+  end: Jan 2025
+  bullets: []
+  notes: "Repos pushed in this window that may be the internship tasks (confirm): calculator, Word_count_js, Tic_Tie_Toe-with_js, Guess_dice_js"
+- id: codealpha
+  include: true
+  title: Project Intern
+  company: CodeAlpha
+  location: Remote
+  type: Internship
+  start: Dec 2024
+  end: Jan 2025
+  bullets: []
+- id: adu-peer-tutor
+  include: true
+  title: Peer Tutor
+  company: Abu Dhabi University
+  location: Abu Dhabi, UAE
+  type: Part-time
+  start: Feb 2024
+  end: Jan 2025
+  bullets: []
+    # - text: Tutored N students per week in <courses>, ...
+    #   tags: [communication, teaching]

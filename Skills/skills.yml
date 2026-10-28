@@ -1,0 +1,84 @@
+# SKILLS — every skill lists the repos that prove it ("evidence").
+# level: strong | working | familiar   (be honest — interviewers will probe)
+# A tailor.yml picks which groups to show, in which order.
+groups:
+  languages:
+    label: Languages
+    items:
+      - {name: Java, level: strong, evidence: [mega_seller_backend, Quic_lab, UAE_COM_CONNECT, Command-Design-Pattern-in-Distributed-Smart-Home-Automation-System, Java_I_Libs]}
+      - {name: TypeScript, level: strong, evidence: [Makeda_Threads_backend, nest-auth-rbac-template, General_purpose_webapp, family_help_front, email_client]}
+      - {name: JavaScript, level: strong, evidence: [Secondary_school_management, tracker, Assistive_technology_hackathon]}
+      - {name: Python, level: working, evidence: [advanced_typing_backend, quiz_gen_api, Ibm_data_analytics_capstone_project, csc302-python-self]}
+      - {name: SQL, level: working, evidence: [mega_seller_backend, typing_club_server, university]}
+      - {name: C, level: working, evidence: [Multithreading]}
+      - {name: Kotlin, level: familiar, evidence: [memory-game-, word_complete_cl_game]}
+      - {name: Go, level: familiar, evidence: [gin-task-tracker]}
+      - {name: HTML/CSS, level: strong, evidence: [HBD_bank, module3_Static-Web]}
+  backend:
+    label: Backend
+    items:
+      - {name: Spring Boot, level: strong, evidence: [mega_seller_backend, spring_boot_templete, spring_template, general_api_springboot]}
+      - {name: Spring Security + JWT, level: strong, evidence: [mega_seller_backend, spring_boot_templete]}
+      - {name: Spring Data JPA / Hibernate, level: working, evidence: [mega_seller_backend, spring_boot_templete]}
+      - {name: NestJS, level: strong, evidence: [Makeda_Threads_backend, nest-auth-rbac-template, jobs_back_nest, simple_nest_auth_guard]}
+      - {name: Node.js, level: working, evidence: [nono-mail-app, email_client]}
+      - {name: Flask, level: working, evidence: [advanced_typing_backend, typing_club_server, quiz_gen_api]}
+      - {name: REST API design, level: strong, evidence: [mega_seller_backend, Makeda_Threads_backend, quiz_gen_api]}
+      - {name: Role-based access control (RBAC), level: strong, evidence: [nest-auth-rbac-template, Makeda_Threads_backend, mega_seller_backend]}
+      - {name: Server-Sent Events (real-time), level: working, evidence: [mega_seller_backend]}
+      - {name: OpenAPI / Swagger, level: working, evidence: [mega_seller_backend, Makeda_Threads_backend]}
+      - {name: Celery task queues, level: familiar, evidence: [advanced_typing_backend]}
+  frontend:
+    label: Frontend & Mobile
+    items:
+      - {name: React, level: strong, evidence: [Secondary_school_management, email_client, makeda_pro_front]}
+      - {name: Next.js (App Router, Server Actions), level: strong, evidence: [General_purpose_webapp, mycharity_frontend, family_help_front, university_course_manager_frontend]}
+      - {name: React Native, level: working, evidence: [Quiz_gen_react_native]}
+      - {name: Tailwind CSS, level: strong, evidence: [General_purpose_webapp, mycharity_frontend]}
+      - {name: Material UI / Radix / shadcn-ui, level: working, evidence: [General_purpose_webapp, family_help_front, makeda_pro_front]}
+      - {name: Android (Kotlin / Java), level: familiar, evidence: [memory-game-, tip-calculator]}
+      - {name: JavaFX, level: familiar, evidence: [news_hub_fx]}
+  data:
+    label: Databases & Data
+    items:
+      - {name: PostgreSQL, level: working, evidence: [mega_seller_backend]}
+      - {name: MySQL, level: working, evidence: [spring_boot_templete, typing_club_server, university]}
+      - {name: MongoDB / Mongoose, level: strong, evidence: [Makeda_Threads_backend, jobs_back_nest, nest-auth-rbac-template]}
+      - {name: Firebase / Firestore, level: working, evidence: [General_purpose_webapp, quiz_gen_api, tracker]}
+      - {name: Redis, level: familiar, evidence: [advanced_typing_backend]}
+      - {name: SQLAlchemy / Alembic, level: working, evidence: [advanced_typing_backend, typing_club_server]}
+      - {name: pandas / Jupyter, level: working, evidence: [Ibm_data_analytics_capstone_project, model_development]}
+  distributed:
+    label: Concurrency & Distributed Systems
+    items:
+      - {name: Java concurrency (locks, ConcurrentHashMap), level: working, evidence: [mega_seller_backend]}
+      - {name: RabbitMQ (topic exchanges, pub/sub), level: working, evidence: [Quic_lab]}
+      - {name: Multithreading in C, level: working, evidence: [Multithreading]}
+      - {name: Message security (AES + HMAC), level: familiar, evidence: [Quic_lab]}
+  devops:
+    label: DevOps & Tools
+    items:
+      - {name: Git / GitHub, level: strong, evidence: [all]}
+      - {name: Docker (multi-stage builds), level: working, evidence: [mega_seller_backend, UAE-Travel-Card-Management-System]}
+      - {name: Docker Compose, level: familiar, evidence: [Makeda_Threads_backend]}
+      - {name: Maven, level: working, evidence: [mega_seller_backend, Quic_lab]}
+      - {name: GitHub Actions / Pages, level: familiar, evidence: [Banking_js_php]}
+      - {name: Cloud deployment (Render), level: familiar, evidence: [mega_seller_backend]}
+  testing:
+    label: Testing & Quality
+    items:
+      - {name: pytest, level: working, evidence: [quiz_gen_api, advanced_typing_backend]}
+      - {name: JUnit 5, level: familiar, evidence: [news_hub_fx, UAE-Travel-Card-Management-System]}
+      - {name: Apache JMeter (load testing), level: TODO, evidence: [TODO-add-repo-or-report]}
+  ai:
+    label: AI / ML Integration
+    items:
+      - {name: Google Gemini API, level: working, evidence: [quiz_gen_api, Quiz_gen_react_native]}
+      - {name: TensorFlow.js / face-api.js / MediaPipe, level: familiar, evidence: [face_recognision_front]}
+      - {name: NLP sentiment analysis, level: TODO, evidence: [TODO-add-repo]}
+  practices:
+    label: Engineering Practices
+    items:
+      - {name: Object-oriented design & design patterns, level: strong, evidence: [design_patterns_in_java, Command-Design-Pattern-in-Distributed-Smart-Home-Automation-System]}
+      - {name: Layered architecture (controller / service / repository), level: strong, evidence: [mega_seller_backend, advanced_typing_backend]}
+      - {name: Data structures & algorithms, level: working, evidence: [LeetCode, Algorithim_python, UAE_COM_CONNECT]}

@@ -1,0 +1,62 @@
+# CERTIFICATIONS — only `verified: true` entries are printed.
+# Source of the first five: LinkedIn export (Oct 2026). Add issue dates + credential URLs from LinkedIn.
+# Put PDFs/images in Certifications/files/ and reference them in `file`.
+- id: ui-visual-elements
+  name: Visual Elements of User Interface Design
+  issuer: CalArts (Coursera)
+  issued: ""
+  credential_url: ""
+  file: ""
+  tags: [frontend, design, ui]
+  verified: true
+- id: intro-nextjs
+  name: Introduction to Next.js
+  issuer: ""                      # TODO issuer (Coursera project?)
+  issued: ""
+  credential_url: ""
+  file: ""
+  tags: [frontend, nextjs, react]
+  verified: true
+- id: ethical-hacking
+  name: Introduction to Ethical Hacking Principles
+  issuer: ""                      # TODO issuer
+  issued: ""
+  credential_url: ""
+  file: ""
+  tags: [security]
+  verified: true
+- id: java-oop-supermarket
+  name: Create a Supermarket App using Java OOP
+  issuer: ""                      # TODO issuer (Coursera Guided Project?)
+  issued: ""
+  credential_url: ""
+  file: ""
+  tags: [java, oop, backend]
+  verified: true
+- id: python-tkinter
+  name: Python GUI Development with Tkinter
+  issuer: ""                      # TODO issuer
+  issued: ""
+  credential_url: ""
+  file: ""
+  tags: [python]
+  verified: true
+# ── Inferred from course-project repos, NOT on your LinkedIn. Confirm, then set verified: true ──
+- id: ibm-data-analyst
+  name: IBM Data Analyst Professional Certificate
+  issuer: IBM (Coursera)
+  issued: ""
+  credential_url: ""
+  file: ""
+  evidence: [Ibm_data_analytics_capstone_project, model_development, Analyzing-Historical-Stock-Revenue-Data-and-Building-a-Dashboard]
+  tags: [data, python, sql]
+  verified: false
+- id: meta-frontend
+  name: Meta Front-End Developer (Little Lemon capstone)
+  issuer: Meta (Coursera)
+  issued: ""
+  credential_url: ""
+  file: ""
+  evidence: [little_lemon]
+  tags: [frontend, react]
+  verified: false

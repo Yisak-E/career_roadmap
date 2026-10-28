@@ -1,0 +1,12 @@
+# How to build the resume for THIS job. Run:  python tools/build.py match  applications/<this-folder>
+# then copy the top-ranked project ids below and run:  python tools/build.py resume applications/<this-folder>
+track: backend                 # default | backend | fullstack | data   (picks headline + summary from profile.yml)
+# headline: ""                 # optional override
+# summary: ""                  # optional override — mirror the job's wording honestly
+focus_tags: [backend, java, spring-boot, security, sql]   # bullets with these tags are preferred
+projects: [mega-seller, spring-boot-apis, smart-city-pubsub, makeda-threads]   # ordered; max_projects applies
+max_projects: 4
+bullets_per_project: 3
+skill_groups: [languages, backend, data, devops, testing]
+max_skills_per_group: 8
+sections: [summary, skills, experience, projects, education, certifications, achievements]

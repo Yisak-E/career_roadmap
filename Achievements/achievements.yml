@@ -1,0 +1,17 @@
+# ACHIEVEMENTS — hackathons, awards, competitions, scholarships, dean's list, talks, open source.
+- id: assistive-tech-hackathon
+  title: Assistive Technology Hackathon — team project   # TODO: event name, date, placement, your role
+  date: TODO 2025-05
+  description: >-
+    Built a React web app with Firebase and the Microsoft Azure Speech SDK as part of a team. (TODO: what it did,
+    what you built, result)
+  evidence: [Assistive_technology_hackathon]
+  tags: [hackathon, frontend, accessibility, ai]
+  verified: false
+- id: leetcode
+  title: TODO LeetCode — N problems solved
+  date: ""
+  description: ""
+  evidence: [LeetCode]
+  tags: [algorithms]
+  verified: false

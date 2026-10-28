@@ -1,0 +1,39 @@
+# EDUCATION — newest first. Source: LinkedIn export (Profile_1.pdf, Oct 2026).
+- id: adu-software-engineering
+  degree: B.Sc. Software Engineering        # TODO confirm exact degree title on transcript
+  institution: Abu Dhabi University
+  location: Abu Dhabi, UAE
+  start: Aug 2023
+  end: Expected 2027                         # TODO confirm graduation date (LinkedIn URL suggests 2027)
+  gpa: ""                                    # optional — include only if strong (e.g. 3.5+)
+  relevant_courses:                          # inferred from your repos — delete any you didn't take
+    - Object-Oriented Programming & Design Patterns (Java)
+    - Data Structures & Algorithms
+    - Operating Systems (multithreading in C)
+    - Distributed Systems (messaging, pub/sub)
+    - Web & Mobile Application Development
+  show_on_resume: true
+- id: coursera-software-engineering
+  degree: Online coursework — Computer Software Engineering
+  institution: Coursera
+  location: Online
+  start: Dec 2024
+  end: Feb 2026
+  relevant_courses: []
+  show_on_resume: false                      # shown on full CV only
+- id: udemy-programming
+  degree: Online coursework — Computer Programming
+  institution: Udemy
+  location: Online
+  start: Aug 2024
+  end: Dec 2024
+  relevant_courses: []
+  show_on_resume: false
+- id: aau-medicine
+  degree: Medicine (transferred to Software Engineering)
+  institution: Addis Ababa University
+  location: Addis Ababa, Ethiopia
+  start: Jan 2023
+  end: Aug 2023
+  relevant_courses: []
+  show_on_resume: false
